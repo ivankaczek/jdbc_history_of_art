@@ -1,29 +1,4 @@
 
-
-/*
-
-public abstract class Dao {
-
-    protected Connection conexion = null;
-    protected ResultSet resultado = null;
-    protected Statement sentencia = null;
-
-    private final String USER = "root";
-    private final String PASSWORD = "root";
-    private final String DATABASE = "tienda";
-    private final String DRIVER = "com.mysql.jdbc.Driver";
-
-    protected void conectarBase() throws ClassNotFoundException, SQLException {
-        try {
-            Class.forName(DRIVER);
-            String urlBaseDeDatos = "jdbc:mysql://localhost:3306/" + DATABASE + "?useSSL=false";
-            conexion = DriverManager.getConnection(urlBaseDeDatos, USER, PASSWORD);
-        } catch (ClassNotFoundException | SQLException ex) {
-            throw ex;
-        }
-    }
-
-*/
 package history_of_art_app.persistence;
 
 import java.sql.Connection;
@@ -39,38 +14,12 @@ public abstract class DAO {
     protected ResultSet res = null;
     protected Statement stat = null;
     
-        /*
-            protected Connection conexion = null;
-            protected ResultSet resultado = null;
-            protected Statement sentencia = null;
-    */
-    
     private final String USER = "root";
     private final String PASSWORD = "root";
     private final String DATABASE = "history_of_art";
     private final String DRIVER = "com.mysql.jdbc.Driver";
-    
-    
-        /*  private final String USER = "root";
-            private final String PASSWORD = "root";
-            private final String DATABASE = "tienda";
-            private final String DRIVER = "com.mysql.jdbc.Driver";
-        */
-//    protected void connect2DB() throws ClassNotFoundException, SQLException {
-//        try {
-//            Class.forName(DRIVER);
-//            //"jdbc:mysql://localhost:3306/" + DATABASE + "?useSSL=false";
-//
-//            String urlDB = "jdbc:mysql://localhost:3306/" + DATABASE + "?useSSL=false";
-//            con = DriverManager.getConnection(urlDB, USER, PASSWORD);
-//        } catch (ClassNotFoundException | SQLException ex) {
-//            System.out.println("Bro, tenés el fucking error acá");
-//            throw ex;               // prounciación 'zrou'
-//            
-//        }
-//    }
-    
-     protected void connect2DB() throws ClassNotFoundException, SQLException {
+      
+    protected void connect2DB() throws ClassNotFoundException, SQLException {
         try {
             Class.forName(DRIVER);
             String urlBaseDeDatos = "jdbc:mysql://localhost:3306/" + DATABASE + "?useSSL=false";

@@ -31,6 +31,11 @@ public class CollectionOfPaintings {
     public void setArtworksInTheCollection(ArrayList<Artwork> artworksInTheCollection) {
         this.artworksInTheCollection = artworksInTheCollection;
     }
+
+    @Override
+    public String toString() {
+        return "CollectionOfPaintings{ " + "nameOfTheArtCollection= " + nameOfTheArtCollection + " , artworksInTheCollection=" + artworksInTheCollection + '}';
+    }
     
     
     

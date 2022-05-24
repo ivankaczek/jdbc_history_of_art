@@ -8,7 +8,9 @@ public class PaintingsByLeonardoDAO extends DAO {
     public PaintingsByLeonardo queryLeonardoPainting(int id2search) throws Exception {
         try {
             String sqlQuery = "SELECT id, masterpiece FROM da_vinci_paintings WHERE id = " + id2search + ";";
-            queryDB(sqlQuery);
+            queryDB(sqlQuery);      
+                                    // even if this queryDB() method is a void, 
+                                    // it stores information in the ResultSet 
             PaintingsByLeonardo painting = null;
             while(res.next()){
                 painting = new PaintingsByLeonardo();

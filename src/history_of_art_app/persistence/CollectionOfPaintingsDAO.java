@@ -11,7 +11,7 @@ public class CollectionOfPaintingsDAO extends DAO {
     
   public CollectionOfPaintings absorbCollectionFromDB(String nameOfTheCollection,
                                                         String nameOfTableInMySQL,
-                                                        ArtistsEnum artistName){
+                                                        ArtistsEnum artistName) throws Exception{
       
       
       try {
@@ -44,8 +44,10 @@ public class CollectionOfPaintingsDAO extends DAO {
                     
                 }
                 
-                // I need to get out of the loop
+                // I need to get out of the loop.
                 id2search = 0;
+                
+                
                 
             } while (id2search != 0);
           
@@ -53,25 +55,19 @@ public class CollectionOfPaintingsDAO extends DAO {
             
                   
                                    
-            PaintingsByLeonardo painting = null;
-            while(res.next()){
-                painting = new PaintingsByLeonardo();
-                painting.setId(res.getInt(1));
-                painting.setMasterpiece(res.getString(2));
-            }
-            //disconnectFromDB();
-            return painting;
+         return new CollectionOfPaintings(nameOfTheCollection, arrayOfMasterpieces);
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e.toString());
             //disconnectFromDB();
             throw e;
         } finally {
+          
             disconnectFromDB();
         }
       
       
-   return new CollectionOfPaintings(nameOfTheCollection, arrayOfMasterpieces);
+   
   }  
     
     

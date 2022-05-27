@@ -4,8 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Ivan/Documents/NetBeansProjects/History_of_Art_APP/src/history_of_art_app/persistence/DAO.java</file>
+            <file>file:/C:/Users/Ivan/Documents/NetBeansProjects/History_of_Art_APP/src/history_of_art_app/persistence/ImplementedDAO.java</file>
+            <file>file:/C:/Users/Ivan/Documents/NetBeansProjects/History_of_Art_APP/src/history_of_art_app/persistence/CollectionOfPaintingsDAO.java</file>
             <file>file:/C:/Users/Ivan/Documents/NetBeansProjects/History_of_Art_APP/src/history_of_art_app/HistoryOfArt_main.java</file>
+            <file>file:/C:/Users/Ivan/Documents/NetBeansProjects/History_of_Art_APP/src/history_of_art_app/entities/Artwork.java</file>
+            <file>file:/C:/Users/Ivan/Documents/NetBeansProjects/History_of_Art_APP/src/history_of_art_app/entities/PaintingsByLeonardo.java</file>
             <file>file:/C:/Users/Ivan/Documents/NetBeansProjects/History_of_Art_APP/src/history_of_art_app/persistence/PaintingsByLeonardoDAO.java</file>
+            <file>file:/C:/Users/Ivan/Documents/NetBeansProjects/History_of_Art_APP/src/history_of_art_app/entities/CollectionOfPaintings.java</file>
+            <file>file:/C:/Users/Ivan/Documents/NetBeansProjects/History_of_Art_APP/src/history_of_art_app/services/Services.java</file>
         </group>
     </open-files>
 </project-private>

@@ -49,6 +49,16 @@ public class Services {
     */
     
     public CollectionOfPaintings hardcodeACollectionOfPaintings(String nameOfTheCollection){
+        
+        /*  
+        REMEMBER:
+            public class CollectionOfPaintings {
+                protected String nameOfTheArtCollection;
+                protected ArrayList<Artwork> artworksInTheCollection;
+        */
+        
+        
+        
         ArrayList<Artwork> collectionOfArtworks = new ArrayList();
         CollectionOfPaintings collection2return = new CollectionOfPaintings();
         collection2return.setArtworksInTheCollection(collectionOfArtworks);
@@ -64,6 +74,19 @@ public class Services {
             |                                                   |
             +---------------------------------------------------+
     */
+    
+     public void readAFullTableFromMySQL() throws Exception {
+        try {
+            System.out.println("Please write DB id");
+            
+            int id2search = sc.nextInt();
+            PaintingsByLeonardo leonardoPaint = leonardoDAO.queryLeonardoPainting(id2search);
+            System.out.println(leonardoPaint.getMasterpiece());
+        } catch (Exception e) {
+            throw e;
+        }
+    }
+    
     
     public void queryLeonardoPaintingUsingId() throws Exception {
         try {
